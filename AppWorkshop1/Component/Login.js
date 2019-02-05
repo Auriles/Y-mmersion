@@ -1,12 +1,3 @@
-/** @format */
-/*
-Nguyen Duc Hoang (Mr)
-Youtube channel: https://www.youtube.com/c/nguyenduchoang
-Programming tutorial channel
-This is Login Screen
-Install icons: react-native-vector-icons
-*/
-
 import React, { Component } from 'react'
 import {
   StyleSheet,
