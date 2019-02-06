@@ -34,8 +34,10 @@ class Signup extends Component {
                         </TextInput>
                         <TextInput 
                         placeholder={'Password'}
+                        secureTextEntry={true}
                         placeholderTextColor={'white'}
-                        style={[styles.container_textInput, styles.TextInput]}>
+                        style={[styles.container_textInput, styles.TextInput]}
+                        >
                             
                         </TextInput>
                 </View>

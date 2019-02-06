@@ -1,9 +1,11 @@
-import { createStackNavigator, createAppContainer } from 'react-navigation';
+import { createStackNavigator, createAppContainer, createDrawerNavigator } from 'react-navigation';
 import Signup from '../Component/Signup'
 import Login from '../Component/Login'
 import Home from '../Component/Home'
+import Category from '../Component/Category'
+import Cart from '../Component/Cart'
 
-const SearchStackNavigator = createStackNavigator({
+const SearchStackNavigator = createDrawerNavigator({
     Login: {
         screen: Login,
         navigationOptions: {
@@ -17,9 +19,17 @@ const SearchStackNavigator = createStackNavigator({
         }
     },
     Home: {
-        screen: Home
+        screen: Home,
+        navigationOptions: {
+            header: null
+        }
+    }, 
+    Category: {
+        screen : Category
+    },
+    Cart: {
+        screen: Cart
     }
 })
-
 
 export default createAppContainer(SearchStackNavigator)
