@@ -1,0 +1,29 @@
+// Main colors
+$main_color: #2091DC;
+$second_color: #1ABC9C;
+
+// Colors
+$green_sea: #1ABC9C;
+$emeraud: #2ECC71;
+$black: #434242;
+$red: #E74C3C;
+$light_grey: #ECF0F1;
+$dark_grey: #95A5A6;
+$dark_blue: #161C54;
+$light_blue: #2091DC;
+$light-violet: rgba(218, 107, 255, 0.7);
+$dark-violet: #8A428E;
+$radial-violet-blue: radial-gradient(ellipse at top, #161C54, transparent),
+radial-gradient(ellipse at bottom, #8A428E, transparent);
+
+// Opacity
+$opacity: rgba(96, 96, 96, 0.7);
+
+// Fonts
+$main_font:'Montserrat', sans-serif;
+$second_font:'Poppins', sans-serif;
+
+// Breakpoints
+$screen_xs: 576px;
+$screen_md: 992px;
+$screen_lg: 1200px;

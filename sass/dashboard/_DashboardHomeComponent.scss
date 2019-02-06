@@ -1,0 +1,130 @@
+#dashboard {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../../src/images/bg-dashboard.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.transparence-header2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: $opacity;
+    position: absolute;
+}
+
+.dashboard-component{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+.container-dashboard {
+    height: auto;
+    background-color: inherit;
+    background: none;
+    height: 100%;
+}
+
+.dashboard-graph {
+    width: 100%;
+}
+
+.line-chart-container {
+    width: 50%;
+    // background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    border-radius: 5px;
+    // box-shadow: 5px 5px 5px $opacity;
+    position: relative;
+}
+
+.line-chart-component {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    // left: 0;
+    // top: 0;
+    h1 {
+        font-family: $main_font;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $light_grey;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+.recharts-wrapper {
+    width: 100% !important;
+    .recharts-surface {
+        height: 100%;
+    }
+}
+
+.pie-chart-container {
+    width: 50%;
+    // background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    // box-shadow: 5px 5px 5px $opacity;
+    position: relative;
+}
+
+.pie-chart-component {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+    h1 {
+        font-family: $main_font;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $light_grey;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+.recharts-wrapper {
+    height: 500px !important;
+}
+
+.previous-sells {
+    margin: 10px 5% 10px 5%;
+    position: relative;
+    h1 {
+        font-family: $main_font;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $light_grey;
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+.blur {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(112, 112, 112, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(8px);
+}
+
+.recharts-text {
+    fill: $light_grey !important;
+    font-family: $second_font;
+}

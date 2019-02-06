@@ -1,0 +1,76 @@
+.description-component {
+    background: $radial-violet-blue;
+    padding: 10% 0% 10% 0%;
+}
+
+.btn-description {
+    height: 63px;
+    width: 301px;
+    border: solid 4px white;
+    background-color: transparent;
+    color: white;
+    text-transform: none;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: $second_font;
+}
+
+
+.description{
+    width:100%;
+    &-title p {
+        margin-top: 68px;
+        color: white;
+        font-family: $main_font;
+        letter-spacing: 10px;
+        font-weight: bold;
+        font-size: 52px;
+        line-height: 63px;
+        text-transform: uppercase;
+        @media screen and (max-width:$screen_xs){
+            font-size:26px;
+            letter-spacing: 5px;
+            line-height: 50px;
+        }
+    }
+    &-details{
+        p{
+            color: white;
+            font-family: $second_font;
+            font-size: 18px;
+            line-height: 29px;
+            margin-top: 50px;
+        }
+
+    }
+    &-products{
+        margin-top:74px;
+        @media screen and(max-width:$screen_md) {
+            @include flex-direction(column);
+            .product-description{
+                width:100%;
+            }
+            .details-group{
+                &:first-of-type{
+                    margin-bottom:74px;
+                }
+            }
+        }
+    }
+}
+
+.product-description {
+    width: 50%;
+    text-align: center;
+}
+
+.product-description p {
+    margin: 0 auto;
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: $second_font;
+    margin-top: 40px;
+}

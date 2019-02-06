@@ -1,0 +1,44 @@
+.table {
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.array-row {
+    height: 30px;
+    border-bottom: solid white 1px;
+    cursor: pointer;
+    &:hover {
+        background: radial-gradient(rgba(0, 0, 0, 0.5),rgba(255, 255, 255, 0.2));
+        &:first-child {
+            background: none;
+        }
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+    .array-cell {
+        height: 100%;
+        text-align: center;
+        color: white;
+        border-left: solid white 1px;
+        &:last-child {
+            border-right: none;
+        }
+        &:first-child {
+            border-left: none;
+        }
+        span {
+            font-family: $second_font;
+        }
+    }
+
+}
+
+.table-dark {
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.2),
+        rgba(0, 0, 0, 0.5)
+    );
+    border-radius: 0px 0px 10px 10px;
+}

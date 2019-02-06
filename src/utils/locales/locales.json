@@ -1,0 +1,46 @@
+{
+    "language": {
+        "FR": "Langue",
+        "EN": "Language"
+    },
+    "AccountCreated":{
+        "FR":"Votre compte a été créé avec succés"
+    },
+
+    "MissingFieldOrEmailExists":{
+        "FR":"Un champ est manquant ou l'adresse email est deja utilisé"
+    },
+
+    "lastname":{
+        "FR":"Nom"
+    },
+
+    "firstname":{
+        "FR":"Prénom"
+    },
+
+    "company":{
+        "FR":"Société"
+    },
+
+    "tel":{
+        "FR":"Télephone"
+    },
+
+    "pigeon": {
+        "FR": "Je souhaite être informé des prochaines actualités de"
+    },
+
+    "signUp":{
+        "FR": "Je m'inscris"
+    },
+
+    "Edit":{
+        "FR":"Editer"
+    },
+
+    "ChangePassword":{
+        "FR": "Changer mot de passe ?"
+    }
+
+}

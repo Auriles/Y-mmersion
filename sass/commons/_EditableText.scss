@@ -1,0 +1,13 @@
+.editable-text{
+    width:75%;
+    textarea{
+        width:100%;
+        border-radius: 5px;
+        font-family: $second_font;
+        resize: none;
+    }
+    i{
+        color:white;
+        margin-left: 10px;
+    }
+}

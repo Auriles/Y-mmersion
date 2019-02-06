@@ -1,0 +1,121 @@
+.form-component {
+    width:100%;
+    background-image: url('../../src/images/bg-form.jpeg');
+    position: relative;
+    padding: 10% 0px 10% 0px;
+
+}
+
+.form {
+    width: 80%;
+    background-color: white;
+    box-shadow: 5px 13px 26px 6px rgba(172, 166, 166, 0.5);
+}
+
+.title-form {
+    font-family: $main_font;
+    color: $dark-violet;
+    font-size: 25px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.form-content {
+    width: 80%;
+}
+
+.description-form {
+    font-family: $second_font;
+    color: $black;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 53px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.label-form {
+    width: 100%;
+    .field{
+        width:40%;
+    }
+    @media screen and (max-width:$screen_md) {
+        @include flex-direction(column);
+        .field{
+            width:100%;
+        }
+    }
+}
+
+.checkbox-form input {
+        height: 26px;
+        width: 26px;
+        border: 3px solid $light-violet;
+        border-radius: 4px;
+}
+
+.form-group {
+    display: block;
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+    font-family: $second_font;
+    color: $black;
+    font-size: 16px;
+}
+
+.form-group label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 3px solid $light-violet;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #0079bf;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.card-payement {
+    margin-bottom: 5%;
+    label {
+        font-family: $second_font;
+        p {
+            margin-bottom: 10px;
+        }
+
+    }
+}
+

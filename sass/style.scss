@@ -1,0 +1,49 @@
+@import "compass";
+@import "compass/reset";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+// base
+@import "./base/variables";
+@import "./base/basics";
+
+//commons
+@import './commons/modal';
+@import './commons/EditableText.scss';
+@import './commons/TableOfSellsComponent.scss';
+@import './commons/TextFieldGroup';
+
+// themes
+@import "./themes/flex";
+
+// partials
+@import "./partials/HeaderComponent";
+@import "./partials/FooterComponent";
+@import "./partials//SidebarComponent";
+
+// buttons
+@import "./themes/buttons";
+
+// incons
+@import "./themes/icons";
+
+// description
+@import "./description/DescriptionComponent";
+@import "./description/DetailsComponent";
+
+// modules
+@import "./modules/FormComponent";
+@import "./modules/Login";
+
+//user-list
+@import"./user-list/UserListComponent";
+
+//user-info
+@import "./user-info//UserInfoComponent";
+
+//sales
+@import "./sales/SaleInfosComponent";
+@import "./sales/SalesComponent";
+
+//dashboard
+@import './dashboard/DashboardHomeComponent';
