@@ -2,7 +2,7 @@
 
 L'application se constitue de deux parties : Le front-end et le back-end 
 
-Pour lancer l'application au complet vous devez cloner deux repos git : 
+Pour lancer l'application au complet vous devez cloner deux repos git : (il vous sera demandé de vous authentifier à vos comptes github ou gitlab)
 1) git clone https://github.com/Auriles/Y-mmersion.git
 2) git clone https://gitlab.com/auriles0404/wearedata-api.git
 
