@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image} from 'react-native';
+import { View, Text, Image, StyleSheet} from 'react-native';
+import { FlatGrid } from 'react-native-super-grid';
 
 import MyHeader from './Header';
 
@@ -16,22 +17,54 @@ export default class Cart extends React.Component {
    }
 
    render() {
-       return (<View style={{
-           flex: 1,
-           flexDirection: 'column',
-       }}>
-       <MyHeader {...this.props}  title="Panier"/>
-           <View style={{
-               flex: 1,
-               backgroundColor: 'violet',
-               alignItems: 'center',
-               justifyContent: 'center'
-           }}>
-               <Text style={{ fontWeight: 'bold', fontSize: 22, color: 'white' }}>
-                   This is Panier
-               </Text>
+        const items = [{ name: 'Votre panier est vide' }];
 
-           </View>
-       </View>);
-   }
+        return (<View style={{
+            flex: 1,
+            flexDirection: 'column',
+        }}> 
+        <MyHeader {...this.props}  title="Panier"/>
+            <View style={{
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
+                <FlatGrid
+            itemDimension={200}
+            items={items}
+            style={styles.gridView}
+            renderItem={({ item }) => (
+        <View style={[styles.itemContainer, ]}>
+          <Text style={styles.itemName}>{item.name}</Text>
+        </View>
+      )}
+    />
+                
+            </View>
+        </View>);
+    }
+
 }
+const styles = StyleSheet.create({
+    gridView: {
+        marginTop: 0,
+        flex: 1,
+      },
+      itemContainer: {
+        borderWidth:2,
+        borderStyle:'solid',
+        borderColor:'#d4d4d5',
+        justifyContent: 'flex-end',
+        borderRadius: 5,
+        padding: 10,
+        height: 100,
+
+      },
+      itemName: {
+        fontSize: 18,
+        color: 'black',
+        fontWeight: '600',
+        textAlign:'center',
+        padding: 50,
+      }
+});

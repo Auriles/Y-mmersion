@@ -4,6 +4,8 @@ import Login from '../Component/Login'
 import Home from '../Component/Home'
 import Category from '../Component/Category'
 import Cart from '../Component/Cart'
+import Sondage from '../Component/Sondage'
+import Deconnexion from '../Component/Deconnexion'
 
 const SearchStackNavigator = createDrawerNavigator({
     Login: {
@@ -29,6 +31,12 @@ const SearchStackNavigator = createDrawerNavigator({
     },
     Cart: {
         screen: Cart
+    },
+    Sondage: {
+        screen : Sondage
+    },
+    Deconnexion: {
+        screen: Deconnexion
     }
 })
 
